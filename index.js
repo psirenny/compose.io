@@ -2,7 +2,7 @@ var extend = require('extend');
 var request = require('superagent');
 
 function Client() {
-  this._apiToken = '';
+  this._accessToken = '';
   this._baseUrl = 'https://api.compose.io/';
   this._data = {};
   this._method = '';
@@ -20,8 +20,8 @@ Client.prototype.account = function (id) {
   return this;
 };
 
-Client.prototype.apiToken = function (token) {
-  this._apiToken = token;
+Client.prototype.accessToken = function (token) {
+  this._accessToken = token;
   return this;
 };
 
@@ -50,7 +50,7 @@ Client.prototype.end = function (callback) {
 
   request[this._method](url)
     .set('Accept-Version', this._version)
-    .set('Authorization', 'Bearer ' + this._apiToken)
+    .set('Authorization', 'Bearer ' + this._accessToken)
     .send(this._data)
     .end(callback);
 };

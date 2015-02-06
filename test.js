@@ -24,12 +24,12 @@ test('account', function (t) {
   t.equal(client._segments[0], 'foo');
 });
 
-test('apiToken', function (t) {
+test('accessToken', function (t) {
   t.plan(2);
   var client = lib();
-  t.equal(typeof client.apiToken, 'function');
-  client.apiToken('foo');
-  t.equal(client._apiToken, 'foo');
+  t.equal(typeof client.accessToken, 'function');
+  client.accessToken('foo');
+  t.equal(client._accessToken, 'foo');
 });
 
 test('database', function (t) {
@@ -162,7 +162,7 @@ test('list all accounts', function (t) {
   t.plan(3);
 
   lib()
-    .apiToken(process.env.COMPOSE_IO_API_TOKEN)
+    .accessToken(process.env.COMPOSE_IO_API_TOKEN)
     .get()
     .accounts()
     .end(function (err, res) {
