@@ -3,6 +3,8 @@ compose.io
 
 Compose.io REST API client.
 
+[![Build Status](https://travis-ci.org/psirenny/compose.io.png?branch=master)](https://travis-ci.org/psirenny/compose.io)
+
 Installation
 ------------
 
