@@ -1,0 +1,32 @@
+{
+  "author": "Dennis Torres <djtorres0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/psirenny/compose.io/issues"
+  },
+  "dependencies": {
+    "extend": "^2.0.0",
+    "superagent": "^0.21.0"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "description": "Compose.io REST API client",
+  "keywords": [
+    "api",
+    "client",
+    "compose.io",
+    "REST"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "compose.io",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psirenny/compose.io.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "version": "0.1.0"
+}
