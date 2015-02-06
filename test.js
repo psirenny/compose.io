@@ -162,7 +162,7 @@ test('list all accounts', function (t) {
   t.plan(3);
 
   lib()
-    .accessToken(process.env.COMPOSE_IO_API_TOKEN)
+    .accessToken(process.env.COMPOSE_IO_ACCESS_TOKEN)
     .get()
     .accounts()
     .end(function (err, res) {
