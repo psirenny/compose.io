@@ -13,7 +13,7 @@ Example
 
     var compose = require('compose.io');
 
-    // create an elastic database deployment
+    // create a db user
     compose()
       .apiToken('...')
       .post()
