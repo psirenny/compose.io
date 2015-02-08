@@ -78,6 +78,14 @@ test('get', function (t) {
   t.equal(client._method, 'get');
 });
 
+test('locations', function (t) {
+  t.plan(2);
+  var client = lib();
+  t.equal(typeof client.locations, 'function');
+  client.locations();
+  t.equal(client._segments[0], 'locations');
+});
+
 test('patch', function (t) {
   t.plan(2);
   var client = lib();
@@ -121,7 +129,7 @@ test('url', function (t) {
 test('users', function (t) {
   t.plan(2);
   var client = lib();
-  t.equal(typeof client.user, 'function');
+  t.equal(typeof client.users, 'function');
   client.users();
   t.equal(client._segments[0], 'users');
 });

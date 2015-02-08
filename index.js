@@ -60,6 +60,11 @@ Client.prototype.get = function () {
   return this;
 };
 
+Client.prototype.locations = function () {
+  this._segments.push('locations');
+  return this;
+};
+
 Client.prototype.patch = function () {
   this._method = 'patch';
   return this;
@@ -72,6 +77,7 @@ Client.prototype.post = function () {
 
 Client.prototype.send = function (data) {
   extend(true, this._data, data);
+  return this;
 };
 
 Client.prototype.type = function (type) {
