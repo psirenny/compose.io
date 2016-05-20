@@ -17,7 +17,7 @@ Example
 
     // create a db user
     compose()
-      .apiToken('...')
+      .accessToken('...')
       .post()
       .deployments()
       .account('...')
