@@ -3,7 +3,7 @@ var request = require('superagent');
 
 function Client() {
   this._accessToken = '';
-  this._baseUrl = 'https://api.compose.io/2016-07';
+  this._baseUrl = 'https://api.compose.io/2016-07/';
   this._data = {};
   this._method = '';
   this._segments = [];
