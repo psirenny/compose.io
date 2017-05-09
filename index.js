@@ -3,11 +3,11 @@ var request = require('superagent');
 
 function Client() {
   this._accessToken = '';
-  this._baseUrl = 'https://api.compose.io/';
+  this._baseUrl = 'https://api.compose.io/2016-07/';
   this._data = {};
   this._method = '';
   this._segments = [];
-  this._version = '2014-06';
+  this._version = '2016-07';
 }
 
 Client.prototype.accounts = function () {
