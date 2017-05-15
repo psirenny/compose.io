@@ -146,7 +146,7 @@ test('version', function (t) {
   t.plan(3);
   var client = lib();
   t.equal(typeof client.version, 'function');
-  t.equal(client.version(), '2014-06');
+  t.equal(client.version(), '2016-07');
   client.version('foo');
   t.equal(client._version, 'foo');
 });
@@ -163,7 +163,7 @@ test('complicated query', function (t) {
     .users()
     .url();
 
-  t.equal(url, 'https://api.compose.io/deployments/:account/:deployment/mongodb/:database/users');
+  t.equal(url, 'https://api.compose.io/2016-07/deployments/:account/:deployment/mongodb/:database/users');
 });
 
 test('list all accounts', function (t) {
