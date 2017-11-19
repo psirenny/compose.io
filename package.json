@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "extend": "^2.0.0",
-    "superagent": "^0.21.0"
+    "superagent": "^3.7.0"
   },
   "devDependencies": {
     "tape": "^3.5.0"
@@ -28,5 +28,5 @@
   "scripts": {
     "test": "node test"
   },
-  "version": "0.3.0"
+  "version": "0.4.0"
 }
